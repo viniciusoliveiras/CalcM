@@ -4,4 +4,117 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Calculadora"/>
+    tools:context=".Calculadora">
+
+
+    <TextView
+        android:id="@+id/textViewAv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="8dp"
+        android:text="AV1"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/APS_AV1_INPUT"
+        app:layout_constraintStart_toStartOf="@+id/APS_AV1_INPUT"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/APS_AV1_INPUT"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="426dp"
+        android:autofillHints=""
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Nota da APS"
+        android:inputType="numberDecimal"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/CALC_AVG_BUTTON"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/AV1_INPUT"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Nota da prova / trabalho"
+        android:inputType="numberDecimal"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAv2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/APS_AV1_INPUT" />
+
+    <EditText
+        android:id="@+id/APS_AV2_INPUT"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Nota da APS"
+        android:inputType="numberDecimal"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/AV2_INPUT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAv2" />
+
+    <TextView
+        android:id="@+id/textViewAv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="AV2"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/APS_AV2_INPUT"
+        app:layout_constraintStart_toStartOf="@+id/APS_AV2_INPUT"
+        app:layout_constraintTop_toBottomOf="@+id/AV1_INPUT" />
+
+    <EditText
+        android:id="@+id/AV2_INPUT"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="289dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Nota da prova / trabalho"
+        android:inputType="numberDecimal"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/APS_AV2_INPUT" />
+
+    <Button
+        android:id="@+id/CALC_AVG_BUTTON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="121dp"
+        android:text="Calcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/APS_AV1_INPUT" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
